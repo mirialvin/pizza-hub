@@ -29,10 +29,22 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+.bg-img {
+  /* The image used */
+  background-image: url("../images/pizza2.jpeg");
 
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
 .header {
   overflow: hidden;
-  background-color:goldenrod;
   padding: 20px 10px;
 }
 
@@ -80,28 +92,5 @@ body {
 
 }
 
-body {
-  font-family: Arial;
-  font-size: 17px;
-}
 
-.container {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.container img {vertical-align: auto;
-  border: 3pc solid blue;
-}
-
-.container .content {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
-}
 
