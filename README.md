@@ -1,7 +1,11 @@
 # {Application Name}
 #### this is an online landing page for a pizza shop, {2021}
 #### By **{Alvin Miri}**
+<<<<<<< HEAD
 
+=======
+![alt text](https://github.com/[mirialvin]/[pizza-hub]/blob/[main]/pizza 5.jpeg?raw=true)
+>>>>>>> 1667e813a2df02b41749e8bb7f1eb50319faaaa0
 ## Description
 * This is a well programmed and styles landing page for a pizza shop which you can oder differnt types of pizza sizes,toppings and also accompanyment of various drinks respective to the menu offered.
 

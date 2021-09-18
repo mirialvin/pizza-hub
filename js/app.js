@@ -1,3 +1,4 @@
+
 // jQuery
 $(document).ready(function() {
 
@@ -11,4 +12,18 @@ $(document).ready(function() {
         }
         hidePreloader();
     });
-}    
+
+    
+    $(button).on("click", function() {
+        alertFadeOutTime = 5000;
+
+        function hideAlert() {
+            var messageAlert = $('#message-alert');
+            messageAlert.fadeOut(alertFadeOutTime);
+        }
+        hideAlert();
+    });
+});
+
+
+
