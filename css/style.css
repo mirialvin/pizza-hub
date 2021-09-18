@@ -91,7 +91,9 @@ body {
   margin: 0 auto;
 }
 
-.container img {vertical-align: middle;}
+.container img {vertical-align: auto;
+  border: 3pc solid blue;
+}
 
 .container .content {
   position: absolute;
@@ -102,3 +104,4 @@ body {
   width: 100%;
   padding: 20px;
 }
+
