@@ -16,68 +16,198 @@
 
 <body>
     <div class="preloader">
-        <div class="status"></div>
+        <div class="status">
+
+        </div>
     </div>
-    <div class="bg-img">
-    <div class="header">
-        <a href="#default" class="logo">Pizza Hub</a>
-        <div class="header-right">
+
+     <div id="navbar">
+        <a href="#default" id="logo"> <img src="images/gifs/\.png"></a>
+        <div id="navbar-right">
           <a class="active" href="#home">Home</a>
           <a href="#contact">Contact</a>
           <a href="#about">About</a>
         </div>
       </div>
-    </div> 
-    <h2>Responsive Column Cards</h2>
-<p>Resize the browser window to see the effect.</p>
+      
+        <h2 style="text-align:center">Slideshow Gallery</h2>
 
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <h3>Card 1</h3>
-      <p>Some text</p>
-      <p>Some text</p>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <h3>Card 2</h3>
-      <p>Some text</p>
-      <p>Some text</p>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="card">
-      <h3>Card 3</h3>
-      <p>Some text</p>
-      <p>Some text</p>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="card">
-      <h3>Card 4</h3>
-      <p>Some text</p>
-      <p>Some text</p>
-    </div>
-  </div>
-</div>
-
-    <script>
-        window.onscroll = function() {myFunction()};
+        <div class="container">
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="images/gifs/istockphoto-1223648852-170667a.jpg" style="width:100%">
+          </div>
         
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="images/gifs/images.jpeg" style="width:100%">
+          </div>
         
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="images/gifs/istockphoto-1254420958-170667a.jpg" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="images/gifs/istockphoto-1297290376-170667a.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="images/gifs/large-pepperoni-mozzarella-pizza-on-260nw-1913018050.jpg" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="images/gifs/photo-1513104890138-7c749659a591.jpeg" style="width:100%">
+          </div>
+            
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+        <br>
+          
+       
+            
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="images/gifs/hawaian.jpeg" alt="Denim Jeans" style="width:100%">
+                    <h1>Hawaiian Pizza</h1>
+                    <p class="price">$19.99</p>
+                    <p>Hawaiian pizza is the most underrated pizza on the planet. Combining pineapple, cheese, and ham. It’s just the BEST pizza variety! We’re using my homemade pizza crust and adding bacon on top. Bacon isn’t a traditional Hawaiian pizza topping, but everything goes with bacon… right?</p>
+                    <p><button>Add to Cart</button></p>
+                  </div>
+                  
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="images/gifs/cheese buger.jpeg" alt="Denim Jeans" style="width:100%">
+                    <h1>Cheeseburger Pizza
+                    </h1>
+                    <p class="price">$19.99</p>
+                    <p> A fun, easy pizza that combines two favorite foods- pizza and cheeseburgers. Bacon, ground beef, dill pickles, tomatoes, and a special sauce give this pizza tons of flavor.</p>
+                    <p><button>Add to Cart</button></p>
+                  </div>
+                  
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="images/gifs/meat delux.jpeg" alt="Denim Jeans" style="width:100%">
+                    <h1>Meat Deluxe.</h1>
+                    <p class="price">$19.99</p>
+                    <p>As the name implies, it had a generous topping of beef/steak. It was totally delish and the more I make them, the more I become comfortable in preparing them.</p>
+                    <p><button>Add to Cart</button></p>
+                  </div>
+                  
+                </div>
+              </div>
+        
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="images/gifs/bozo.jpeg" alt="Denim Jeans" style="width:100%">
+                    <h1>Chicken Macon BBQ.</h1>
+                    <p class="price">$19.99</p>
+                    <p>A topping of spicy barbeque sauce, diced chicken, cilantro, peppers, and onion all covered with cheese, and baked to bubbly goodness!</p>
+                    <p><button>Add to Cart</button></p>
+                  </div>
+                  
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="images/gifs/vegi.jpeg" alt="Denim Jeans" style="width:100%">
+                    <h1>Veg Feast.</h1>
+                    <p class="price">$19.99</p>
+                    <p>Veggie Lover's Pizza comes topped with mushrooms, red onions, green bell peppers, roma tomatoes and black olives. </p>
+                    <p><button>Add to Cart</button></p>
+                  </div>
+                  
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="images/gifs/beef.jpeg" alt="Denim Jeans" style="width:100%">
+                    <h1>Chicken & Beef Pepperoni.</h1>
+                    <p class="price">$19.99</p>
+                    <p>Pepperoni Lover's Pizza comes with just one topping, it's loaded up with 50 percent more pepperoni compared to a standard larger pepperoni pizza.</p>
+                    <p><button>Add to Cart</button></p>
+                  </div>
+                  
+                </div>
+              </div>
+
+          <div class="contact section-header">
+            <div id="message-alert" class="alert" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true">×</span>
+                        </button>
+            </div>
+          <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input required type="text" class="form-control" id="name" placeholder="Name...">
+                </div>
+                <div class="form-group col-md-6">
+                    <input required type="email" class="form-control" id="email" placeholder="Email...">
+                </div>
+
+                <div class="form-group">
+                    <textarea class="form-control" required placeholder="Your message here..." id="textarea" cols="90" rows="7"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <button id="button" class="btn-primary raise" onclick="showCustomerMessage()">Submit</button>
+            </div>
+
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
         }
-        </script>         
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+       
+      // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "30px 10px";
+    document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    document.getElementById("navbar").style.padding = "80px 10px";
+    document.getElementById("logo").style.fontSize = "35px";
+  }
+}
+   </script> 
+
+   
+
 </body>
 </html>
