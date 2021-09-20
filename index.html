@@ -30,11 +30,12 @@
           <a class="active" href="#home">Home</a>
           <a href="#contact">Contact</a>
           <a href="#about">About</a>
+          
         </div>
       </div>
       
        
-      <h2 style="text-align:center">Slideshow Gallery</h2>
+      <h2 style="text-align:center">Slideshow Gallery  <link rel="stylesheet" href="Untitled-2.html"></h2>
 
       <div class="container">
         <div class="mySlides">
@@ -143,282 +144,12 @@
                 </div>
               </div>
                <br>
-              <div id="ordersection">
-                <h3><b>Order here</b></h3>
-                <div class="row">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-6">
-                        <div class="jumbotron">
-                            <form id="orders">
-                                <div class="form-group">
-                                    <label for="name">Your Name:</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Name..." pattern="[a-zA-Z ]+" required>
-                                </div>
-                                <h5>Kindly Place Your Order From the following:</h5>
-                                <div class="form-group">
-                                  <label for="pizza-size">Select Pizza size</label>
-                                  <select class="form-control" id="pizza-size" required>
-                                      <option>Small</option>
-                                      <option>Medium</option>
-                                      <option>Large</option>
-                                  </select>
-                              </div>
-                                <div class="form-group">
-                                    <label for="pizza-flavor">Select Pizza flavor</label>
-                                    <select class="form-control" id="pizza-flavor" required>
-                                        <option>Veg Feast</option>
-                                        <option>Chicken & Beef Pepperoni.</option>
-                                        <option>Chicken Macon BBQ.</option>
-                                        <option>Chicken Tikka</option>
-                                        <option>Meat Deluxe.</option>
-                                        <option>Grilled Pork</option>
-                                        <option>Hawaiian</option>
-                                        <option>Cheeseburger Pizza</option>
-                                        <option>Pepperoni</option>
 
-                                    </select>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="pizza-crust">Select Pizza Crust</label>
-                                    <select class="form-control" id="pizza-crust" required>
-                                        <option>Sfincione-Thick</option>
-                                        <option>Hand Tossed</option>
-                                        <option>Brooklyn Style</option>
-                                        <option>Pan</option>
-                                        <option>Gluten Free</option>
-                                        <option>Thin</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="pizza-toppings">Select Extra Toppings</label>
-                                
-                                    <small class="form-text text-muted"><b>Small:</b>Ksh.70 <b>Mediun:</b>Ksh.100 <b>Large:</b>Ksh.130</small>
-                                    <div class="row">
-                                        <div class="col-md-1"></div>
-                                        <div class="col-md-5">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" name="toppings" value="Bacon" id="bacon">
-                                                <label class="form-check-label" for="bacon">Bacon</label>
-                                            </div>
-                                            
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" name="toppings" value="Ham" id="ham">
-                                                <label class="form-check-label" for="ham">Ham</label>
-                                            </div>
-                                           
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" name="toppings" value="Mushrooms" id="mushrooms">
-                                                <label class="form-check-label" for="mushrooms">Mushroom</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-5">
-                                            
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" name="toppings" value="Onions" id="onions">
-                                                <label class="form-check-label" for="onions">Onions</label>
-                                            </div>
-                                            
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" name="toppings" value="Pepperoni" id="pepperoni">
-                                                <label class="form-check-label" for="pepperoni">Pepperoni</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" name="toppings" value="Sausage" id="sausage">
-                                                <label class="form-check-label" for="sausage">Sausage</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-1"></div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="pizza-number">Number of Pizzas</label>
-                                    <select class="form-control" id="pizza-number" required>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
-                                <button type="submit" name="submitButton" class="btn submit" id="placeorder">Place Order</button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-md-3"></div>
-                    <div id="yourorder">
-                      <br>
-                      <hr width="30%" color="#FE5A07" border-color="#FE5A07">
-                      <h3 class="salutation"><b>Your order:</b></h3>
-                      <div id="orderDetails">
-                          <div class="row">
-                              <div class="col-md-2"></div>
-                              <div class="col-md-8">
-                                  <table class="table table-sm" id="orderTable">
-                                      <thead>
-                                          <tr>
-                                              <th scope="col">Flavor</th>
-                                              <th scope="col">Number</th>
-                                              <th scope="col">Size</th>
-                                              <th scope="col">Crust</th>
-                                              <th scope="col">Extra Toppings</th>
-                                              <th scope="col">Total</th>
-                                          </tr>
-                                      </thead>
-                                      <tbody id="ordersmade">
-                                          <tr>
-                                              <td class="pizza-flavor"></td>
-                                              <td class="number"></td>
-                                              <td class="pizza-size"></td>
-                                              <td class="pizza-crust"></td>
-                                              <td class="toppings"></td>
-                                              <td class="pizzaTotal1"td>
-                                          </tr>
-                                      </tbody>
-                                      <tfoot>
-                                          <tr>
-                                              <td></td>
-                                              <td></td>
-                                              <td></td>
-                                              <td></td>
-                                              <td></td>
-                                              <td class="grandtot"td>
-                                          </tr>
-                                      </tfoot>
-                                  </table>
-                                  <a href="#ordersection" type="submit" name="addorder" onclick="addOrder()" class="btn  submit" id="addorder">Add Order</a>
-                                  <button type="submit" name="checkout" onclick="deliveryOptions()" class="btn submit" id="checkout">Checkout</button>
-                              </div>
-                              <div class="col-md-2"></div>
-                          </div>
-                      </div>
-                </div>
+               <div class="services section-header">
+                <h3>PLACE ORDER HERE</h3>
+                <a class="button" href="Untitled-2.html"><h7>Place Order here</h7></a>
             </div>
-            <div id="yourorder">
-                <br>
-                <hr width="30%" color="#FE5A07" border-color="#FE5A07">
-                <h3 class="salutation"><b>Here's your order:</b></h3>
-                <div id="orderDetails">
-                    <div class="row">
-                        <div class="col-md-2"></div>
-                        <div class="col-md-8">
-                            <table class="table table-sm" id="orderTable">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Flavor</th>
-                                        <th scope="col">Number</th>
-                                        <th scope="col">Size</th>
-                                        <th scope="col">Crust</th>
-                                        <th scope="col">Extra Toppings</th>
-                                        <th scope="col">Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="ordersmade">
-                                    <tr>
-                                        <td class="pizza-flavor"></td>
-                                        <td class="number"></td>
-                                        <td class="pizza-size"></td>
-                                        <td class="pizza-crust"></td>
-                                        <td class="toppings"></td>
-                                        <td class="pizzaTotal1"td>
-                                    </tr>
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td class="grandtot"td>
-                                    </tr>
-                                </tfoot>
-                            </table>
-                            <a href="#ordersection" type="submit" name="addorder" onclick="addOrder()" class="btn  submit" id="addorder">Add Order</a>
-                            <button type="submit" name="checkout" onclick="deliveryOptions()" class="btn submit" id="checkout">Checkout</button>
-                        </div>
-                        <div class="col-md-2"></div>
-                    </div>
-                </div>
-                <div id="deliveryOptions">
-                    <i class="fa fa-clock-o" style="font-size:100px;color:#FE5A07"></i>
-                    <br>
-                    <br>
-                    <p>Your order will be ready in 30 minutes.</p>
-                    <p>Would you like to:</p>
-                    <button type="submit" name="pickup" onclick="pickUp()" class="btn"><i class="fas fa-store"></i> Pick it Up</button>
-                    <button type="submit" name="deliver" onclick="deliver()" class="btn submit"><i class="fas fa-truck"></i> Get it Delivered</button>
-                </div>
-            </div>
-            <div id="delivery">
-                <div class="row">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4">
-                        <div class="jumbotron">
-                            <form id="deliveryDetails">
-                                <h5>Please fill the following for delivery:</h5>
-                                <div class="form-group">
-                                    <div class="form-group">
-                                        <label for="location">Delivery location:</label>
-                                        <input type="text" class="form-control" id="location" placeholder="Street, County" pattern="[a-zA-Z0-9]+" required>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="phone">Phone Number:</label>
-                                    <input type="tel" id="phone" name="phone" placeholder="+254 123 456789" pattern="[+254]{4} [0-9]{3} [0-9]{6}" required>
-                                    <br>
-                                    <br>
-                                    <small>Format: +254 123 456789</small>
-                                    <br>
-                                    <br>
-                                </div>
-                                <button type="submit" class="btn submit" id="delivery-details">Deliver</button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-md-4"></div>
-                </div>
-            </div>
-            <div id="pickUpConfirmation">
-                <div class="row">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4">
-                        <div class="jumbotron">
-                            <i class="fas fa-check-circle" style="font-size:80px;color:green;"></i>
-                            <br>
-                            <br>
-                            <p><div class="name"></div>, your order has been successfully placed!<br><br>Total amount payable at the store on pickup is Ksh.<div class="totalPick"></div>.</p>
-                            <a href="#header" type="button" class="btn" onclick="reloadPage()" id="got-it" style="background-color:green">OK, Got it!</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4"></div>
-                </div>
-            </div>
-            <div id="deliveryConfirmation">
-                <div class="row">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4">
-                        <div class="jumbotron">
-                            <i class="fas fa-check-circle" style="font-size:80px;color:green;"></i>
-                            <br>
-                            <br>
-                            <p>
-                                <div class="name"></div>, your order has been successfully placed!
-                                <br>
-                                <br>The delivery fee to
-                                <div class="location"></div> is Ksh.200.
-                                <br>
-                                <br>Total amount payable to the courier on delivery is Ksh.
-                                <div class="totalDel"></div>.
-                                <br>
-                                <br>In case there are any changes to your order, we shall reach you on:
-                                <div class="phone"></div>.</p>
-                            <a href="#header" type="button" class="btn" onclick="reloadPage()" id="got-it" style="background-color:green">OK, Got it!</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4"></div>
-                </div>
-            </div>
+              
             <br>
               <div id="contactus">
                 <h3><b>Contact us</b></h3>
@@ -519,7 +250,13 @@ function scrollFunction() {
 }
 
 
- function placeOrder() { //function for placing an order
+function capitalize_inputs(str) { //function to capitalize inputs
+  return str.replace(/\w\S*/g, function(txt) {
+      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+  });
+}
+
+function placeOrder() { //function for placing an order
   //get inputs from form
   var name = capitalize_inputs($("input#name").val());
   var flavor = $("#pizza-flavor").val();
@@ -604,8 +341,76 @@ function scrollFunction() {
   } else {
       document.getElementById("pizza-toppings-help").innerHTML = "Please select a maximum of 3!";
       document.getElementById("pizza-toppings-help").style.cssText = 'color:red !important' //overrides previous color styling
-      }
-    }
+  }
+}
+
+function makeDelivery() {
+  $("#deliveryConfirmation").show();
+  var location = capitalize_inputs($("input#location").val()); //get delivery details
+  var phone = $("input#phone").val();
+  $(".location").text(location);
+  $(".phone").text(phone);
+  $("#delivery").hide();
+}
+
+$(document).ready(function() {
+  $("#orders").submit(function(event) {
+      event.preventDefault();
+      placeOrder();
+  });
+  $("#deliveryDetails").submit(function(event) {
+      event.preventDefault();
+      makeDelivery();
+  });
+});
+
+function cancelOrders() {
+  location.reload(); //reload contents of page to original status
+}
+
+var arrayTotal = []; //global array used to store all total prices for each order
+
+function deliveryOptions() {
+  $("#deliveryOptions").show();
+  $("#orderDetails").hide();
+  document.getElementById("orders").reset(); //reset form
+  $('#placeorder').prop('disabled', false); //enable place order button
+  var checkoutTotal = 0;
+  arrayTotal.forEach(function(index) {
+      checkoutTotal = checkoutTotal + index;
+  });
+  $(".totalPick").text(checkoutTotal);
+  var checkoutTotalDel = checkoutTotal + 200; //add Ksh.200 to checkout total when delivery is chosen
+  $(".totalDel").text(checkoutTotalDel);
+}
+
+function pickUp() {
+  $("#pickUpConfirmation").show();
+  $("#yourorder").hide();
+}
+
+function deliver() {
+  $("#delivery").show();
+  $("#yourorder").hide();
+}
+
+function reloadPage() {
+  location.reload(); //reload contents of page to original status
+}
+
+function clearTextarea() {
+  $("#messageForm").reset(); //reset textarea inputs
+}
+
+function addOrder() {
+  $('#placeorder').prop('disabled', false); //enable button
+  $("input[type='checkbox']").prop({ //enable checkboxes
+      disabled: false
+  });
+  $("input[type='checkbox']").prop({ //uncheck previously checked checkboxes
+      checked: false
+  });
+} 
    
 });
 </script> 

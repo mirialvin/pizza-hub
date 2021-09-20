@@ -380,3 +380,12 @@ div.totalPick, div.name, div.location, div.totalDel, div.phone{
   display: inline;
   font-weight: bold;
 }
+.mySlides{
+  border: 3px solid black;
+
+  
+}
+.section-header {
+  text-align: center;
+  line-height: 30px;
+  }
