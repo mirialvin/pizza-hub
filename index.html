@@ -23,7 +23,8 @@
 
      <div id="navbar">
       <a class="navbar-brand img-responsive" href="#">
-        <img src="images/gifs/\.png" alt="Logo" style="width:100px;">
+        <img src="images/gifs/lap.gif" alt="Logo"  style="width:100px;">
+        <b>Pizza Hut</b>
     </a>
         <div id="navbar-right">
           <a class="active" href="#home">Home</a>
@@ -80,7 +81,7 @@
                   <div class="card">
                     <img src="images/gifs/hawaian.jpeg" alt="Denim Jeans" style="width:100%">
                     <h1>Hawaiian Pizza</h1>
-                    <p class="price">$19.99</p>
+                    <p class="price">Ksh1000</p>
                     <p>Hawaiian pizza is the most underrated pizza on the planet. Combining pineapple, cheese, and ham. It’s just the BEST pizza variety! We’re using my homemade pizza crust and adding bacon on top. Bacon isn’t a traditional Hawaiian pizza topping, but everything goes with bacon… right?</p>
                     <p><button>Add to Cart</button></p>
                   </div>
@@ -91,7 +92,7 @@
                     <img src="images/gifs/cheese buger.jpeg" alt="Denim Jeans" style="width:100%">
                     <h1>Cheeseburger Pizza
                     </h1>
-                    <p class="price">$19.99</p>
+                    <p class="price">Ks1000h</p>
                     <p> A fun, easy pizza that combines two favorite foods- pizza and cheeseburgers. Bacon, ground beef, dill pickles, tomatoes, and a special sauce give this pizza tons of flavor.</p>
                     <p><button>Add to Cart</button></p>
                   </div>
@@ -101,7 +102,7 @@
                   <div class="card">
                     <img src="images/gifs/meat delux.jpeg" alt="Denim Jeans" style="width:100%">
                     <h1>Meat Deluxe.</h1>
-                    <p class="price">$19.99</p>
+                    <p class="price">Ksh1000</p>
                     <p>As the name implies, it had a generous topping of beef/steak. It was totally delish and the more I make them, the more I become comfortable in preparing them.</p>
                     <p><button>Add to Cart</button></p>
                   </div>
@@ -114,7 +115,7 @@
                   <div class="card">
                     <img src="images/gifs/bozo.jpeg" alt="Denim Jeans" style="width:100%">
                     <h1>Chicken Macon BBQ.</h1>
-                    <p class="price">$19.99</p>
+                    <p class="price">Ksh1000</p>
                     <p>A topping of spicy barbeque sauce, diced chicken, cilantro, peppers, and onion all covered with cheese, and baked to bubbly goodness!</p>
                     <p><button>Add to Cart</button></p>
                   </div>
@@ -124,7 +125,7 @@
                   <div class="card">
                     <img src="images/gifs/vegi.jpeg" alt="Denim Jeans" style="width:100%">
                     <h1>Veg Feast.</h1>
-                    <p class="price">$19.99</p>
+                    <p class="price">Ksh1000</p>
                     <p>Veggie Lover's Pizza comes topped with mushrooms, red onions, green bell peppers, roma tomatoes and black olives. </p>
                     <p><button>Add to Cart</button></p>
                   </div>
@@ -134,38 +135,71 @@
                   <div class="card">
                     <img src="images/gifs/beef.jpeg" alt="Denim Jeans" style="width:100%">
                     <h1>Chicken & Beef Pepperoni.</h1>
-                    <p class="price">$19.99</p>
+                    <p class="price">Ksh1000</p>
                     <p>Pepperoni Lover's Pizza comes with just one topping, it's loaded up with 50 percent more pepperoni compared to a standard larger pepperoni pizza.</p>
                     <p><button>Add to Cart</button></p>
                   </div>
                   
                 </div>
               </div>
-
-          <div class="contact section-header">
-            <div id="message-alert" class="alert" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                          <span aria-hidden="true">×</span>
-                        </button>
-            </div>
-          <form>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <input required type="text" class="form-control" id="name" placeholder="Name...">
+              <div id="contactus">
+                <h3><b>Contact us</b></h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>Email us:</h5>
+                        <p>lartedellapizza@gmail.com</p>
+                        <h5>Call us:</h5>
+                        <p>+254 123456789</p>
+                        <h5>Hours:</h5>
+                        <p>Monday-Saturday: 11am-11pm</p>
+                        <p>Sundays & public holidays: closed</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p>We value your feedback. Leave us a message:</p>
+                        <form id="messageForm">
+                            <div class="form-group textarea">
+                                <textarea type="text" name="message" id="message" class="form-control" rows="8" placeholder="Your message here..." required></textarea>
+                                <button type="submit" class="btn" onclick="clearTextarea()">SEND</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div class="form-group col-md-6">
-                    <input required type="email" class="form-control" id="email" placeholder="Email...">
-                </div>
-
-                <div class="form-group">
-                    <textarea class="form-control" required placeholder="Your message here..." id="textarea" cols="90" rows="7"></textarea>
+                <div class="socials">
+                    <span><i class="fab fa-facebook icon_facebook" style="font-size:30px" ></i></span>
+                    <span><i class="fab fa-twitter" style="font-size:30px"></i></span>
+                    <span><i class="fab fa-instagram icon_instagram" style="font-size:30px"></i></span>
                 </div>
             </div>
-            <div class="form-group">
-                <button id="button" class="btn-primary raise" onclick="showCustomerMessage()">Submit</button>
-            </div>
-
+        </div>
+    </body>
+    
         <script>
+          // jQuery
+$(document).ready(function() {
+
+//Preloader
+$(window).on("load", function() {
+    preloaderFadeOutTime = 3000;
+
+    function hidePreloader() {
+        var preloader = $('.preloader');
+        preloader.fadeOut(preloaderFadeOutTime);
+    }
+    hidePreloader();
+});
+
+
+$(button).on("click", function() {
+    alertFadeOutTime = 5000;
+
+    function hideAlert() {
+        var messageAlert = $('#message-alert');
+        messageAlert.fadeOut(alertFadeOutTime);
+    }
+    hideAlert();
+});
+});
+
         var slideIndex = 1;
         showSlides(slideIndex);
         
@@ -207,9 +241,15 @@ function scrollFunction() {
     document.getElementById("logo").style.fontSize = "35px";
   }
 }
-   </script> 
 
-   
 
+
+ </script> 
+
+<script src="js/mdb.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

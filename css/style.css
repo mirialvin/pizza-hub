@@ -124,8 +124,8 @@ body {
 }
 #navbar {
   overflow: hidden;
-  background-color: whitesmoke;
-  padding: 50px 10px;
+  background-color;
+  padding: 10px 10px;
   transition: 0.4s;
   position:sticky;
   width: 100%;
@@ -273,3 +273,34 @@ background-color: aqua;
   border: none;
   color: black;
   }
+#b{
+  color: aliceblue;
+}
+#contactus{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  background-image: url("../images/pizza.jpg");
+  background-size: cover;
+}
+#contactus img{
+  object-fit: cover;
+  height: auto;
+}
+#contactus .btn{
+  background: transparent !important;
+  color: white;
+  font-weight: bold;
+  padding: 1%;
+}
+h3{
+  padding-top: 3%;
+  font-size: 50px;
+  padding-bottom: 2%;
+}
+#message{
+  color: white;
+  background: transparent;
+}
