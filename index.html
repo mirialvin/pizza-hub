@@ -33,47 +33,47 @@
         </div>
       </div>
       
-        <h2 style="text-align:center">Slideshow Gallery</h2>
+       
+      <h2 style="text-align:center">Slideshow Gallery</h2>
 
-        <div class="container">
-          <div class="mySlides">
-            <div class="numbertext">1 / 6</div>
-            <img src="images/gifs/istockphoto-1223648852-170667a.jpg" style="width:100%">
-          </div>
-        
-          <div class="mySlides">
-            <div class="numbertext">2 / 6</div>
-            <img src="images/gifs/images.jpeg" style="width:100%">
-          </div>
-        
-          <div class="mySlides">
-            <div class="numbertext">3 / 6</div>
-            <img src="images/gifs/istockphoto-1254420958-170667a.jpg" style="width:100%">
-          </div>
-            
-          <div class="mySlides">
-            <div class="numbertext">4 / 6</div>
-            <img src="images/gifs/istockphoto-1297290376-170667a.jpg" style="width:100%">
-          </div>
-        
-          <div class="mySlides">
-            <div class="numbertext">5 / 6</div>
-            <img src="images/gifs/large-pepperoni-mozzarella-pizza-on-260nw-1913018050.jpg" style="width:100%">
-          </div>
-            
-          <div class="mySlides">
-            <div class="numbertext">6 / 6</div>
-            <img src="images/gifs/photo-1513104890138-7c749659a591.jpeg" style="width:100%">
-          </div>
-            
-          <a class="prev" onclick="plusSlides(-1)">❮</a>
-          <a class="next" onclick="plusSlides(1)">❯</a>
-        
-          <div class="caption-container">
-            <p id="caption"></p>
-          </div>
-        <br>
+      <div class="container">
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+          <img src="images/gifs/istockphoto-1223648852-170667a.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+          <img src="images/gifs/images.jpeg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+          <img src="images/gifs/istockphoto-1254420958-170667a.jpg" style="width:100%">
+        </div>
           
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <img src="images/gifs/istockphoto-1297290376-170667a.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+          <img src="images/gifs/large-pepperoni-mozzarella-pizza-on-260nw-1913018050.jpg" style="width:100%">
+        </div>
+          
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+          <img src="images/gifs/photo-1513104890138-7c749659a591.jpeg" style="width:100%">
+        </div>
+          
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      <br>
        
             
               <div class="row">
@@ -150,7 +150,10 @@
                     <div class="col-md-6">
                         <div class="jumbotron">
                             <form id="orders">
-                                
+                                <div class="form-group">
+                                    <label for="name">Your Name:</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Name..." pattern="[a-zA-Z ]+" required>
+                                </div>
                                 <h5>Kindly Place Your Order From the following:</h5>
                                 <div class="form-group">
                                   <label for="pizza-size">Select Pizza size</label>
@@ -291,6 +294,131 @@
                       </div>
                 </div>
             </div>
+            <div id="yourorder">
+                <br>
+                <hr width="30%" color="#FE5A07" border-color="#FE5A07">
+                <h3 class="salutation"><b>Here's your order:</b></h3>
+                <div id="orderDetails">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                            <table class="table table-sm" id="orderTable">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Flavor</th>
+                                        <th scope="col">Number</th>
+                                        <th scope="col">Size</th>
+                                        <th scope="col">Crust</th>
+                                        <th scope="col">Extra Toppings</th>
+                                        <th scope="col">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="ordersmade">
+                                    <tr>
+                                        <td class="pizza-flavor"></td>
+                                        <td class="number"></td>
+                                        <td class="pizza-size"></td>
+                                        <td class="pizza-crust"></td>
+                                        <td class="toppings"></td>
+                                        <td class="pizzaTotal1"td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="grandtot"td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <a href="#ordersection" type="submit" name="addorder" onclick="addOrder()" class="btn  submit" id="addorder">Add Order</a>
+                            <button type="submit" name="checkout" onclick="deliveryOptions()" class="btn submit" id="checkout">Checkout</button>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+                <div id="deliveryOptions">
+                    <i class="fa fa-clock-o" style="font-size:100px;color:#FE5A07"></i>
+                    <br>
+                    <br>
+                    <p>Your order will be ready in 30 minutes.</p>
+                    <p>Would you like to:</p>
+                    <button type="submit" name="pickup" onclick="pickUp()" class="btn"><i class="fas fa-store"></i> Pick it Up</button>
+                    <button type="submit" name="deliver" onclick="deliver()" class="btn submit"><i class="fas fa-truck"></i> Get it Delivered</button>
+                </div>
+            </div>
+            <div id="delivery">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <div class="jumbotron">
+                            <form id="deliveryDetails">
+                                <h5>Please fill the following for delivery:</h5>
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="location">Delivery location:</label>
+                                        <input type="text" class="form-control" id="location" placeholder="Street, County" pattern="[a-zA-Z0-9]+" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number:</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+254 123 456789" pattern="[+254]{4} [0-9]{3} [0-9]{6}" required>
+                                    <br>
+                                    <br>
+                                    <small>Format: +254 123 456789</small>
+                                    <br>
+                                    <br>
+                                </div>
+                                <button type="submit" class="btn submit" id="delivery-details">Deliver</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+            <div id="pickUpConfirmation">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <div class="jumbotron">
+                            <i class="fas fa-check-circle" style="font-size:80px;color:green;"></i>
+                            <br>
+                            <br>
+                            <p><div class="name"></div>, your order has been successfully placed!<br><br>Total amount payable at the store on pickup is Ksh.<div class="totalPick"></div>.</p>
+                            <a href="#header" type="button" class="btn" onclick="reloadPage()" id="got-it" style="background-color:green">OK, Got it!</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+            <div id="deliveryConfirmation">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <div class="jumbotron">
+                            <i class="fas fa-check-circle" style="font-size:80px;color:green;"></i>
+                            <br>
+                            <br>
+                            <p>
+                                <div class="name"></div>, your order has been successfully placed!
+                                <br>
+                                <br>The delivery fee to
+                                <div class="location"></div> is Ksh.200.
+                                <br>
+                                <br>Total amount payable to the courier on delivery is Ksh.
+                                <div class="totalDel"></div>.
+                                <br>
+                                <br>In case there are any changes to your order, we shall reach you on:
+                                <div class="phone"></div>.</p>
+                            <a href="#header" type="button" class="btn" onclick="reloadPage()" id="got-it" style="background-color:green">OK, Got it!</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
             <br>
               <div id="contactus">
                 <h3><b>Contact us</b></h3>
@@ -323,8 +451,8 @@
         </div>
     </body>
     
-        <script>
-          // jQuery
+  <script>
+// jQuery
 $(document).ready(function() {
 
    //Preloader
@@ -348,9 +476,7 @@ $(document).ready(function() {
         }
         hideAlert();
     });
-});
-
-        var slideIndex = 1;
+ var slideIndex = 1;
         showSlides(slideIndex);
         
         function plusSlides(n) {
@@ -393,13 +519,100 @@ function scrollFunction() {
 }
 
 
-
- </script> 
+ function placeOrder() { //function for placing an order
+  //get inputs from form
+  var name = capitalize_inputs($("input#name").val());
+  var flavor = $("#pizza-flavor").val();
+  var size = $("#pizza-size").val();
+  var crust = $("#pizza-crust").val();
+  var toppings = [];
+  $.each($('input[name="toppings"]:checked'),
+      function() {
+          toppings.push($(this).val());
+      });
+  var number = $("#pizza-number").val();
+  var sizeCost; //set different prices for the different pizza flavors depending on their size
+  if (flavor === "Bbq Beef" || flavor === "Bbq Chicken" || flavor === "Hawaiian" || flavor === "Pulled Pork") {
+      if (size === "Small") {
+          sizeCost = 400;
+      } else if (size === "Medium") {
+          sizeCost = 650;
+      } else if (size === "Large") {
+          sizeCost = 900;
+      }
+  } else if (flavor === "Bbq Pork" || flavor === "Grilled Pork" || flavor === "Margharita" || flavor === "Marinara" || flavor === "Pepperoni") {
+      if (size === "Small") {
+          sizeCost = 450;
+      } else if (size === "Medium") {
+          sizeCost = 700;
+      } else if (size === "Large") {
+          sizeCost = 950;
+      }
+  } else if (flavor === "Chicken Tikka" || flavor === "Gamberi" || flavor === "Mushroom" || flavor === "Oyster" || flavor === "Spicy Veggie" || flavor === "Original Veggie") {
+      if (size === "Small") {
+          sizeCost = 500;
+      } else if (size === "Medium") {
+          sizeCost = 750;
+      } else if (size === "Large") {
+          sizeCost = 1100;
+      }
+  }
+  var crustCost; //set prices for different crust types
+  if (crust === "Gluten Free") {
+      crustCost = 230;
+  } else if (crust === "Hand Tossed") {
+      crustCost = 200;
+  } else if (crust === "Original") {
+      crustCost = 150;
+  } else if (crust === "Pan") {
+      crustCost = 180;
+  } else if (crust === "Stuffed") {
+      crustCost = 250;
+  } else if (crust === "Thin") {
+      crustCost = 100;
+  }
+  var checkboxes = $('input[name="toppings"]:checked').length; //get number of checkboxes checked
+  if (checkboxes <= 3) { //limit number of checkboxes allowed to not more than 3
+      if (size === "Small") {
+          var toppingsCost = checkboxes * 70;
+      } else if (size === "Medium") {
+          var toppingsCost = checkboxes * 100;
+      } else if (size === "Large") {
+          var toppingsCost = checkboxes * 130;
+      }
+      $("input[type='checkbox']:not(:checked)").prop({ //disable unchecked boxes
+          disabled: true
+      });
+      $('#placeorder').prop('disabled', true); //deactivate button after order is made to prevent client from changing order once the order is placed
+      $("#yourorder").show();
+      var price = (sizeCost + crustCost + toppingsCost);
+      var totalPrice = parseInt(price * number);
+      $(".salutation").text("Hey" + " " + name + ". Here's your order:");
+      $(".pizza-size").append('<tr><td id="pizza-size">' + size);
+      $(".number").append('<tr><td id="number">' + number);
+      $(".pizza-crust").append('<tr><td id="pizza-crust">' + crust);
+      $(".pizza-flavor").append('<tr><td id="pizza-flavor">' + flavor);
+      $(".pizzaTotal1").append('<tr><td id="pizzaTotal1">' + totalPrice);
+      arrayTotal.push(totalPrice); //create an array for all total prices
+      if (toppings == "") {
+          $(".toppings").append('<tr><td id="pizza-toppings">' + "-");
+      }
+      if (toppings != "") {
+          $(".toppings").append('<tr><td id="pizza-toppings">' + toppings);
+      }
+      $(".name").text(name);
+  } else {
+      document.getElementById("pizza-toppings-help").innerHTML = "Please select a maximum of 3!";
+      document.getElementById("pizza-toppings-help").style.cssText = 'color:red !important' //overrides previous color styling
+      }
+    }
+   
+});
+</script> 
 
 <script src="js/mdb.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script src="js/script.js"></script>
+<script src="js/app.js"></script>
 </body>
-</html>

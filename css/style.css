@@ -116,6 +116,7 @@ img {
 }
 
 
+
 * {box-sizing: border-box;}
 
 body { 
@@ -124,7 +125,7 @@ body {
 }
 #navbar {
   overflow: hidden;
-  background-color;
+  background-color:#222;
   padding: 10px 10px;
   transition: 0.4s;
   position:sticky;
@@ -200,12 +201,8 @@ body {
   padding: 5px;
 }
 
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}.card {
+
+.card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
@@ -303,4 +300,83 @@ h3{
 #message{
   color: white;
   background: transparent;
+}
+#ordersection{
+  text-align: center;
+}
+.jumbotron{
+ /*styling for both jumbotron elements*/
+  border-radius: 20px;
+}
+form{
+  padding-left: 13%;
+  padding-right: 13%;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+.form-control{
+ /*change color of inputs*/
+  color: rgb(17, 17, 17);
+}
+form label{
+  color: black;
+  font-size: 17px;
+}
+select{
+  display: block !important;
+}
+.form-check{
+  padding: 0;
+}
+h5 {
+ /*styling for all h5 elements*/
+  color: #FE5A07 
+}
+.col-md-5{
+ /*align content in all col-md-5*/
+  text-align: left;
+  padding: 0;
+}
+.form-group small{
+ /*style small text in the form*/
+  margin-top: 0 !important;
+  margin-bottom: 8px;
+}
+.btn {
+ /* style all buttons */
+  color: #fff;
+  background-color: #FE5A07 !important;
+  border-radius: 9px;
+  padding: 9px;
+}
+#yourorder{
+  text-align: center;
+  display: none;
+  padding-bottom: 5%;
+}
+table .table-sm th{
+  text-align: center;
+}
+#text{
+  padding-top: 7%;
+  padding-bottom: 5%;
+  padding-left: 0;
+  padding-right: 0;
+}
+#deliveryOptions{
+  display: none;
+}
+#delivery{
+  display: none;
+  text-align: center;
+  padding: 3% 
+}
+#pickUpConfirmation, #deliveryConfirmation{
+  display: none;
+  text-align: center;
+}
+div.totalPick, div.name, div.location, div.totalDel, div.phone{
+ /*style how the divs display */
+  display: inline;
+  font-weight: bold;
 }
