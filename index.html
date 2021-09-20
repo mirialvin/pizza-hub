@@ -139,17 +139,167 @@
                     <p>Pepperoni Lover's Pizza comes with just one topping, it's loaded up with 50 percent more pepperoni compared to a standard larger pepperoni pizza.</p>
                     <p><button>Add to Cart</button></p>
                   </div>
-                  
+
                 </div>
               </div>
+               <br>
+              <div id="ordersection">
+                <h3><b>Order here</b></h3>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <div class="jumbotron">
+                            <form id="orders">
+                                
+                                <h5>Kindly Place Your Order From the following:</h5>
+                                <div class="form-group">
+                                  <label for="pizza-size">Select Pizza size</label>
+                                  <select class="form-control" id="pizza-size" required>
+                                      <option>Small</option>
+                                      <option>Medium</option>
+                                      <option>Large</option>
+                                  </select>
+                              </div>
+                                <div class="form-group">
+                                    <label for="pizza-flavor">Select Pizza flavor</label>
+                                    <select class="form-control" id="pizza-flavor" required>
+                                        <option>Veg Feast</option>
+                                        <option>Chicken & Beef Pepperoni.</option>
+                                        <option>Chicken Macon BBQ.</option>
+                                        <option>Chicken Tikka</option>
+                                        <option>Meat Deluxe.</option>
+                                        <option>Grilled Pork</option>
+                                        <option>Hawaiian</option>
+                                        <option>Cheeseburger Pizza</option>
+                                        <option>Pepperoni</option>
+
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="pizza-crust">Select Pizza Crust</label>
+                                    <select class="form-control" id="pizza-crust" required>
+                                        <option>Sfincione-Thick</option>
+                                        <option>Hand Tossed</option>
+                                        <option>Brooklyn Style</option>
+                                        <option>Pan</option>
+                                        <option>Gluten Free</option>
+                                        <option>Thin</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pizza-toppings">Select Extra Toppings</label>
+                                
+                                    <small class="form-text text-muted"><b>Small:</b>Ksh.70 <b>Mediun:</b>Ksh.100 <b>Large:</b>Ksh.130</small>
+                                    <div class="row">
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-5">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="toppings" value="Bacon" id="bacon">
+                                                <label class="form-check-label" for="bacon">Bacon</label>
+                                            </div>
+                                            
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="toppings" value="Ham" id="ham">
+                                                <label class="form-check-label" for="ham">Ham</label>
+                                            </div>
+                                           
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="toppings" value="Mushrooms" id="mushrooms">
+                                                <label class="form-check-label" for="mushrooms">Mushroom</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="toppings" value="Onions" id="onions">
+                                                <label class="form-check-label" for="onions">Onions</label>
+                                            </div>
+                                            
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="toppings" value="Pepperoni" id="pepperoni">
+                                                <label class="form-check-label" for="pepperoni">Pepperoni</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="toppings" value="Sausage" id="sausage">
+                                                <label class="form-check-label" for="sausage">Sausage</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-1"></div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pizza-number">Number of Pizzas</label>
+                                    <select class="form-control" id="pizza-number" required>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                                <button type="submit" name="submitButton" class="btn submit" id="placeorder">Place Order</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-3"></div>
+                    <div id="yourorder">
+                      <br>
+                      <hr width="30%" color="#FE5A07" border-color="#FE5A07">
+                      <h3 class="salutation"><b>Your order:</b></h3>
+                      <div id="orderDetails">
+                          <div class="row">
+                              <div class="col-md-2"></div>
+                              <div class="col-md-8">
+                                  <table class="table table-sm" id="orderTable">
+                                      <thead>
+                                          <tr>
+                                              <th scope="col">Flavor</th>
+                                              <th scope="col">Number</th>
+                                              <th scope="col">Size</th>
+                                              <th scope="col">Crust</th>
+                                              <th scope="col">Extra Toppings</th>
+                                              <th scope="col">Total</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody id="ordersmade">
+                                          <tr>
+                                              <td class="pizza-flavor"></td>
+                                              <td class="number"></td>
+                                              <td class="pizza-size"></td>
+                                              <td class="pizza-crust"></td>
+                                              <td class="toppings"></td>
+                                              <td class="pizzaTotal1"td>
+                                          </tr>
+                                      </tbody>
+                                      <tfoot>
+                                          <tr>
+                                              <td></td>
+                                              <td></td>
+                                              <td></td>
+                                              <td></td>
+                                              <td></td>
+                                              <td class="grandtot"td>
+                                          </tr>
+                                      </tfoot>
+                                  </table>
+                                  <a href="#ordersection" type="submit" name="addorder" onclick="addOrder()" class="btn  submit" id="addorder">Add Order</a>
+                                  <button type="submit" name="checkout" onclick="deliveryOptions()" class="btn submit" id="checkout">Checkout</button>
+                              </div>
+                              <div class="col-md-2"></div>
+                          </div>
+                      </div>
+                </div>
+            </div>
+            <br>
               <div id="contactus">
                 <h3><b>Contact us</b></h3>
                 <div class="row">
                     <div class="col-md-4">
                         <h5>Email us:</h5>
-                        <p>lartedellapizza@gmail.com</p>
+                        <p>alvinhiuhu@gmail.com</p>
                         <h5>Call us:</h5>
-                        <p>+254 123456789</p>
+                        <p>+254113209525</p>
                         <h5>Hours:</h5>
                         <p>Monday-Saturday: 11am-11pm</p>
                         <p>Sundays & public holidays: closed</p>
@@ -177,27 +327,27 @@
           // jQuery
 $(document).ready(function() {
 
-//Preloader
-$(window).on("load", function() {
-    preloaderFadeOutTime = 3000;
+   //Preloader
+   $(window).on("load", function() {
+      preloaderFadeOutTime = 3000;
 
-    function hidePreloader() {
-        var preloader = $('.preloader');
-        preloader.fadeOut(preloaderFadeOutTime);
-    }
-    hidePreloader();
-});
+      function hidePreloader() {
+          var preloader = $('.preloader');
+          preloader.fadeOut(preloaderFadeOutTime);
+      }
+        hidePreloader();
+    });
 
 
-$(button).on("click", function() {
-    alertFadeOutTime = 5000;
+    $(button).on("click", function() {
+       alertFadeOutTime = 5000;
 
-    function hideAlert() {
-        var messageAlert = $('#message-alert');
-        messageAlert.fadeOut(alertFadeOutTime);
-    }
-    hideAlert();
-});
+       function hideAlert() {
+          var messageAlert = $('#message-alert');
+          messageAlert.fadeOut(alertFadeOutTime);
+        }
+        hideAlert();
+    });
 });
 
         var slideIndex = 1;
